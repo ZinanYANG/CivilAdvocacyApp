@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundViewOfficialActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".OfficialActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/MenuOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#441144"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/locationOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:background="#872287"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuOfficialActivity" />
+
+    <TextView
+        android:id="@+id/officialNameOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="officialNameOfficialActivity"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/photoOfficialActivity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationOfficialActivity" />
+
+    <TextView
+        android:id="@+id/officeNameOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="officeNameOfficialActivity"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/photoOfficialActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officialNameOfficialActivity" />
+
+    <TextView
+        android:id="@+id/party_TextOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:text="partyOfficialActivity"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/photoOfficialActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/photoOfficialActivity"
+        app:layout_constraintTop_toBottomOf="@+id/locationOfficialActivity"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <ImageView
+        android:id="@+id/photoOfficialActivity"
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:usesCleartextTraffic="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationOfficialActivity"
+        app:srcCompat="@drawable/about" />
+
+    <ImageView
+        android:id="@+id/facebookOfficialActivity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/websiteUnderlineOfficialActivity"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/twitterOfficialActivity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/youTubeOfficialActivity"
+        app:layout_constraintTop_toBottomOf="@+id/websiteUnderlineOfficialActivity"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/party_ImageOfficialActivity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/photoOfficialActivity"
+        app:layout_constraintEnd_toEndOf="@id/photoOfficialActivity"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toEndOf="@+id/officeNameOfficialActivity"
+        app:layout_constraintTop_toTopOf="@id/photoOfficialActivity"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/dem_logo" />
+
+    <TextView
+        android:id="@+id/addressOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Address:"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officeNameOfficialActivity" />
+
+    <TextView
+        android:id="@+id/addressUnderlineOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:text="addressUnderlineOfficialActivity"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/photoOfficialActivity"
+        app:layout_constraintStart_toEndOf="@+id/addressOfficialActivity"
+        app:layout_constraintTop_toBottomOf="@+id/officeNameOfficialActivity" />
+
+    <TextView
+        android:id="@+id/phoneOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Phone:"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressUnderlineOfficialActivity" />
+
+    <TextView
+        android:id="@+id/phoneUnderlineOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="53dp"
+        android:text="phoneUnderlineOfficialActivity"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/photoOfficialActivity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/phoneOfficialActivity"
+        app:layout_constraintTop_toBottomOf="@+id/addressUnderlineOfficialActivity" />
+
+    <TextView
+        android:id="@+id/emailOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Email:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneOfficialActivity" />
+
+    <TextView
+        android:id="@+id/emailUnderlineOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="58dp"
+        android:text="emailUnderlineOfficialActivity"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/photoOfficialActivity"
+        app:layout_constraintStart_toEndOf="@+id/emailOfficialActivity"
+        app:layout_constraintTop_toBottomOf="@+id/phoneUnderlineOfficialActivity" />
+
+    <TextView
+        android:id="@+id/websiteOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Website:"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailOfficialActivity" />
+
+    <TextView
+        android:id="@+id/websiteUnderlineOfficialActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="42dp"
+        android:text="websiteUnderlineOfficialActivity"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/photoOfficialActivity"
+        app:layout_constraintStart_toEndOf="@+id/websiteOfficialActivity"
+        app:layout_constraintTop_toBottomOf="@+id/emailUnderlineOfficialActivity" />
+
+    <ImageView
+        android:id="@+id/youTubeOfficialActivity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/facebookOfficialActivity"
+        app:layout_constraintTop_toBottomOf="@+id/websiteUnderlineOfficialActivity"
+        app:srcCompat="@drawable/youtube" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

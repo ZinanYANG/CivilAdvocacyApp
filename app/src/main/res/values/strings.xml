@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Civil Advocacy App</string>
+
+    <!--    location mainActivity-->
+    <string name="deniedText">Location permission was denied - cannot determine address</string>
+    <string name="cannot_determine_location">Cannot determine location</string>
+    <string name="textview">TextView</string>
+</resources>
